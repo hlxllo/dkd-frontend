@@ -33,11 +33,11 @@
     <el-table-column type="selection" width="55" align="center" />
     <el-table-column label="型号名称" align="center" prop="name" />
     <el-table-column label="型号编码" align="center" prop="model" />
-    <el-table-column label="设备图片" align="center" prop="image" width="100">
+    <!-- <el-table-column label="设备图片" align="center" prop="image" width="100">
       <template #default="scope">
         <image-preview :src="scope.row.image" :width="50" :height="50" />
       </template>
-    </el-table-column>
+</el-table-column> -->
     <el-table-column label="货道行" align="center" prop="vmRow" />
     <el-table-column label="货道列" align="center" prop="vmCol" />
     <el-table-column label="设备容量" align="center" prop="channelMaxCapacity" />
@@ -70,9 +70,9 @@
       <el-form-item label="设备容量" prop="channelMaxCapacity">
         <el-input-number v-model="form.channelMaxCapacity" :min="1" :max="10" placeholder="请输入设备容量" />
       </el-form-item>
-      <el-form-item label="设备图片" prop="image">
+      <!-- <el-form-item label="设备图片" prop="image">
         <image-upload v-model="form.image" />
-      </el-form-item>
+      </el-form-item> -->
     </el-form>
     <template #footer>
       <div class="dialog-footer">

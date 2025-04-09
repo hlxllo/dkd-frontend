@@ -36,11 +36,11 @@
     <el-table-column type="selection" width="55" align="center" />
     <el-table-column label="序号" type="index" width="50" align="center" prop="skuId" />
     <el-table-column label="商品名称" align="center" prop="skuName" />
-    <el-table-column label="商品图片" align="center" prop="skuImage" width="100">
+    <!-- <el-table-column label="商品图片" align="center" prop="skuImage" width="100">
       <template #default="scope">
         <image-preview :src="scope.row.skuImage" :width="50" :height="50" />
       </template>
-    </el-table-column>
+</el-table-column> -->
     <el-table-column label="品牌" align="center" prop="brandName" />
     <el-table-column label="规格" align="center" prop="unit" />
     <el-table-column label="商品价格" align="center" prop="price">
@@ -94,9 +94,9 @@
       <el-form-item label="规格" prop="unit">
         <el-input-number v-model="form.unit" :min="1" :precision="0" placeholder="请输入规格" />
       </el-form-item>
-      <el-form-item label="商品图片" prop="skuImage">
+      <!-- <el-form-item label="商品图片" prop="skuImage">
         <image-upload v-model="form.skuImage" />
-      </el-form-item>
+      </el-form-item> -->
     </el-form>
     <template #footer>
       <div class="dialog-footer">

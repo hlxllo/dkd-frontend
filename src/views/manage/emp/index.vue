@@ -101,13 +101,13 @@
           <el-option v-for="item in regionList" :key="item.id" :label="item.regionName" :value="item.id" />
         </el-select>
       </el-form-item>
-      <el-form-item label="员工头像" prop="image">
+      <!-- <el-form-item label="员工头像" prop="image">
         <image-upload v-model="form.image" />
-      </el-form-item>
+      </el-form-item> -->
       <el-form-item label="是否启用" prop="status">
         <el-radio-group v-model="form.status">
           <el-radio v-for="dict in emp_status" :key="dict.value" :label="parseInt(dict.value)">{{ dict.label
-            }}</el-radio>
+          }}</el-radio>
         </el-radio-group>
       </el-form-item>
     </el-form>
